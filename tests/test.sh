@@ -162,17 +162,17 @@ test_versions() {
   echo "--- Testing Docker Image $DOCKER_IMAGE ---"
 
   if [[ -z ${METEOR_TEST_OPTION+x} ]]; then
-    #test_version "--release=1.2.1"
-    #test_version "--release=1.3.5.1"
+    test_version "--release=1.2.1"
+    test_version "--release=1.3.5.1"
     # test_version "--release=1.4"
     # test_version "--release=1.4.4.5"
-    #test_version "--release=1.5.4.1"
-    #test_version "--release=1.6.1.4"
-    #test_version "--release=1.7.0.5"
-    #test_version "--release=1.8.1"
-    #test_version "--release=1.9.3"
-    #test_version "--release=1.10.2"
-    #test_version "--release=1.11.1"
+    test_version "--release=1.5.4.1"
+    test_version "--release=1.6.1.4"
+    test_version "--release=1.7.0.5"
+    test_version "--release=1.8.1"
+    test_version "--release=1.9.3"
+    test_version "--release=1.10.2"
+    test_version "--release=1.11.1"
     test_version "--release=2.0-beta.3"
 
     # Latest version
