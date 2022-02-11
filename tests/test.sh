@@ -65,6 +65,7 @@ test_bundle() {
     -v "$PWD"/../bundle:/bundle \
     -e "ROOT_URL=http://localhost.com" \
     -e "NPM_INSTALL_OPTIONS=--no-bin-links" \
+    -e "MONGO_URL=none" \
     -p 3000:3000 \
     -d \
     --name meteor-docker-test \
