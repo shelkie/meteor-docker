@@ -36,7 +36,7 @@ change_version() {
 
   cd ..
   rm -rf app
-  hide_output meteor create $1 app
+  hide_output meteor create --bare $1 app
   cd app
   sleep 1
 
