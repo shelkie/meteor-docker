@@ -31,7 +31,7 @@ RUN npm init -y &&  \
 # Run everything after as non-privileged user.
 USER pptruser
 
-CMD ["google-chrome-stable"]
+# CMD ["google-chrome-stable"]
 
 ONBUILD USER root
 ONBUILD ARG NODE_VERSION='8.17.0'
